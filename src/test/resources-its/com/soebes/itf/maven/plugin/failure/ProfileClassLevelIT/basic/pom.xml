@@ -29,7 +29,7 @@
   <parent>
     <groupId>com.soebes.smpp</groupId>
     <artifactId>smpp</artifactId>
-    <version>5.3.8</version>
+    <version>5.3.9</version>
   </parent>
 
   <groupId>com.soebes.katas</groupId>
@@ -59,12 +59,12 @@
       <dependency>
         <groupId>nl.jqno.equalsverifier</groupId>
         <artifactId>equalsverifier</artifactId>
-        <version>3.4.1</version>
+        <version>3.10</version>
       </dependency>
       <dependency>
         <groupId>org.assertj</groupId>
         <artifactId>assertj-core</artifactId>
-        <version>3.16.1</version>
+        <version>3.23.1</version>
       </dependency>
       <dependency>
         <groupId>org.apiguardian</groupId>
