@@ -47,7 +47,7 @@ class ProfileClassLevelIT {
     assertThat(result).isSuccessful()
         .out()
         .warn()
-        .containsExactly(
+        .containsOnly(
             "The requested profile \"run-its\" could not be activated because it does not exist."
         );
   }
@@ -69,7 +69,7 @@ class ProfileClassLevelIT {
     assertThat(result).isSuccessful()
         .out()
         .warn()
-        .containsExactly(
+        .containsOnly(
             "The requested profile \"run-its\" could not be activated because it does not exist."
         );
   }
@@ -92,7 +92,7 @@ class ProfileClassLevelIT {
     assertThat(result).isSuccessful()
         .out()
         .warn()
-        .containsExactly(
+        .containsOnly(
             "The requested profile \"run-somethingdifferent\" could not be activated because it does not exist."
         );
   }

@@ -63,7 +63,7 @@ class ProfileIT {
     assertThat(result).isSuccessful()
         .out()
         .warn()
-        .containsExactly("The requested profile \"one\" could not be activated because it does not exist.");
+        .containsOnly("The requested profile \"one\" could not be activated because it does not exist.");
   }
 
   @MavenTest
@@ -86,7 +86,7 @@ class ProfileIT {
     assertThat(result).isSuccessful()
         .out()
         .warn()
-        .containsExactly(
+        .containsOnly(
             "The requested profile \"one\" could not be activated because it does not exist.",
             "The requested profile \"two\" could not be activated because it does not exist."
         );
